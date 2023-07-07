@@ -1,0 +1,6 @@
+print(ord("A"))
+print(ord("v"))
+print(ord("s"))
+print(chr(68))
+print(chr(78))
+print("\u0489")
