@@ -1,4 +1,4 @@
-def max3(x:int, y:int, z:int):
+def max3(x:int, y:int, z:int) -> int:
     """receives three number as input and return max of them
     
     Parameters:
@@ -11,5 +11,6 @@ def max3(x:int, y:int, z:int):
     """
     return max(x, y, z)
 
-# print(max3.__doc__)
-print(help(max3))
+print(max3.__doc__)
+# print(help(max3))
+print(max3.__annotations__)
