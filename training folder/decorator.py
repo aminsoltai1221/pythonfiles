@@ -28,20 +28,21 @@
 def outer2(func):
     def wrapper():
         print("before func execution in outer2")
-        func()
+        print(func())
         print("before func execution in outer2")
     return wrapper
-def outer1(func):
-    def wrapper():
-        print("before func execution in outer1")
-        x=func()
-        print(x)
-        print("before func execution in outer1")
-    return wrapper
+# def outer1(func):
+#     def wrapper():
+#         print("before func execution in outer1")
+#         x=func()
+#         print(x)
+#         print("before func execution in outer1")
+#     return wrapper
 @outer2
-@outer1
+# @outer1
 def test():
     return 5
+
 test()
 
 
