@@ -7,9 +7,7 @@ def fact(n):
 print(fact(5))
 
 def fibonacci(n):
-    if n ==1:
-        return 1
-    elif n == 2:
+    if n ==1 or n==2:
         return 1
     result = fibonacci(n-1) + fibonacci(n-2)
     return result
