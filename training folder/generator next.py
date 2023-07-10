@@ -20,6 +20,9 @@ def my_gen():
     while n<17:
         yield n
         n += 1
-       
-print(next(my_gen()))
+k=my_gen()
+print(next(k))      
+print(next(k))       
+print(next(k))       
+ 
 print(list(my_gen()))
