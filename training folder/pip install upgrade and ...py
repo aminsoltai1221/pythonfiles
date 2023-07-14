@@ -5,3 +5,16 @@
 
 # # upgrade 
 # pip install --upgrade <name>
+
+# to show outdated packages
+# pip list --outdated
+
+
+# to show more information
+# pip rich <name>
+
+
+# to export all packages that installed
+# pip freeze > all_packages.txt
+
+# to import and install all packages that are neccessary or all requirements
