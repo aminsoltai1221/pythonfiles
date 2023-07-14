@@ -1,3 +1,9 @@
+# in modules we should have docstring like follow
+"""this module's performance is .....""" 
+
+
+
+
 def max3(x:int, y:int, z:int) -> int:
     """receives three number as input and return max of them
     
