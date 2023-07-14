@@ -18,3 +18,4 @@
 # pip freeze > all_packages.txt
 
 # to import and install all packages that are neccessary or all requirements
+# pip install -r all_packages.txt
