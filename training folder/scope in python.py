@@ -1,15 +1,20 @@
 def my_func():
     b = 10
+
     def func2():
         a = 5
-    print(a)
+    # print(a)
+
 
 my_func()
 
-c=54
+c = 54
+
+
 def my_func2():
-    c=60
+    c = 60
     print(c)
+
 
 print(c)
 my_func2()
@@ -17,24 +22,42 @@ my_func2()
 
 def func3():
     global x
-    x=64
+    x = 64
 
 
-# func3()
+func3()
 print(x)
 
+y = 7
 
-y= 7
+
 def test():
     # print(y)
     def test2():
-        x=3
+        x = 3
         print(x)
+
         def test3():
             nonlocal x
             x = 6
             print(x)
+
         test3()
         print(x)
-    test2()  
+
+    test2()
+
+
 test()
+
+x1 = 300
+
+
+def myfunc():
+    print(x1)
+    y2 = x1
+    y2 += 60
+    print(y2)
+
+
+myfunc()
