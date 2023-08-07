@@ -1,10 +1,13 @@
 words_list = ["assert", "can", "candy"]
 
 
-with open("listofwords.txt") as wf:
+with open("exercise/listofwords.txt") as wf:
     result = wf.readlines()
     for i in result:
-        words_list.append(i)
+        words_list.append(i[:-1])
+    
+with open("listedwords", "w") as lw:
+    lw.write(str(words_list))
     
 print(words_list) 
 
