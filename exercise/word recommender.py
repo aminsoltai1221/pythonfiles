@@ -1,7 +1,7 @@
 words_list = ["assert", "can", "candy"]
 
 
-with open("words.txt", "r") as wf:
+with open("listofwords.txt") as wf:
     result = wf.readlines()
     for i in result:
         words_list.append(i)
