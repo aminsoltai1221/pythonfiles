@@ -1,5 +1,17 @@
 
 
+<<<<<<< HEAD
+=======
+with open("exercise/listofwords.txt") as wf:
+    result = wf.readlines()
+    for i in result:
+        words_list.append(i[:-1])
+    
+with open("listedwords", "w") as lw:
+    lw.write(str(words_list))
+    
+print(words_list) 
+>>>>>>> origin/main
 
 
 def recommender(word):
