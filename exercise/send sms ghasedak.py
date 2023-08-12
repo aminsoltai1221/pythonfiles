@@ -1,13 +1,13 @@
 import ghasedakpack
 import json
-with open("score-table", "r") as js:
+with open("exercise/scores.json", "r") as js:
     data = js.read()
-    print(data)
-
-# message = f"Hi, {name} Dear! your score is {score}"
-# APIKEY = "dab20691840e48319e5d7172d3451f282c3ff19ecabb434c9e15c181d83e7289"
-# sms = ghasedakpack.Ghasedak(APIKEY)
-# sms.send({'message':message, 'receptor' : '09901491003', 'linenumber': '300002525'})
+    data = json.loads(data)
+for name, score in data.items():
+    message = f"Hi, {name} Dear! your score is {score}"
+    APIKEY = "dab20691840e48319e5d7172d3451f282c3ff19ecabb434c9e15c181d83e7289"
+    sms = ghasedakpack.Ghasedak(APIKEY)
+    sms.send({'message':message, 'receptor' : '09901491003', 'linenumber': '300002525'})
 
 
 
