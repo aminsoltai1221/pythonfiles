@@ -1,3 +1,6 @@
+import requests
+
+
 def send_simple_message():
     return requests.post(
         "https://api.mailgun.net/v3/sandboxf9be6b10162d442d97efadbc134ecb04.mailgun.org/messages",
