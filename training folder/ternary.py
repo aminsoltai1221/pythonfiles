@@ -15,3 +15,30 @@ t = 90
 print(('Water is not boiling', 'Water is boiling')[t >= 100])
 print({True: 'Water is boiling', False: 'Water is not boiling'}[t >= 100])
 print((lambda: 'Water is not boiling', lambda: 'Water is boiling')[t >= 100]())
+
+# Define a lambda function with ternary condition
+f = lambda x: "Positive" if x > 0 else "Negative or Zero"
+
+# Test the function
+print(f(10))  # Output: Positive
+print(f(-5))  # Output: Negative or Zero
+print(f(0))   # Output: Negative or Zero
+
+# Define a list of numbers
+numbers = [1, -2, 3, -4, 5]
+
+# Use a list comprehension with a lambda function to classify the numbers
+classification = [(lambda x: "Positive" if x > 0 else "Negative")(x) for x in numbers]
+
+print(classification)  # Output: ['Positive', 'Negative', 'Positive', 'Negative', 'Positive']
+
+
+
+
+# Define a list of numbers
+numbers = [1, -2, 3, -4, 5]
+
+# Use a map function with a lambda function to classify the numbers
+classification = list(map(lambda x: "Positive" if x > 0 else "Negative", numbers))
+
+print(classification)  # Output: ['Positive', 'Negative', 'Positive', 'Negative', 'Positive']
