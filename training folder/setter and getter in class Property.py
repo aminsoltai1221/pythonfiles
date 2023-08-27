@@ -1,14 +1,32 @@
+# class Person:
+#     def __init__(self) -> None:
+#         self.__age=None
+#     def get_age(self):
+#         return self.__age
+#     def set_age(self,number):
+#         self.__age = number
+#     def del_age(self):
+#         del self.__age
+#     age = property(get_age, set_age, del_age)
+    
+    
+    
 class Person:
     def __init__(self) -> None:
-        self.__age=None
-    def get_age(self):
+        self.__age = 30 
+    @property    
+    def age(self):
         return self.__age
-    def set_age(self,number):
+    @age.setter
+    def age(self,number):
         self.__age = number
-    def del_age(self):
+    @age.deleter
+    def age(self):
         del self.__age
-    age = property(get_age, set_age, del_age)
-    
+
+
+
+
     
 ali=Person()
 

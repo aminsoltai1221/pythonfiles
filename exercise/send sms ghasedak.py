@@ -11,7 +11,7 @@
 
 from kavenegar import *
 api = KavenegarAPI('334E2F53522B327277447876624A727A53626649356B3166507A4B714F7259327A73674A514336787353383D')
-params = { 'sender' : '2000500666', 'receptor': '09901491003', 'message' :'.وب سرویس پیام کوتاه کاوه نگار' }
+params = { 'sender' : '2000500666', 'receptor': '09336102503', 'message' :'09901491003سلام تاج سرم رسیدین؟' }
 response = api.sms_send( params)
 
 
