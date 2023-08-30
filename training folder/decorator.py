@@ -46,3 +46,23 @@ def test():
 test()
 
 
+
+
+
+
+
+
+
+def outer_drcorator(name):
+    def inner_decorator(func):
+        def wrapper():
+            return func(name)
+        return wrapper
+    return inner_decorator
+
+
+@outer_drcorator("ali")
+def say_hello(name):
+    return f"hi {name}"
+
+print(say_hello())
