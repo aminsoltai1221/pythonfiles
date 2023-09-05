@@ -1,8 +1,9 @@
 set1={"car","suit","carrot"}
 set2={"card","suite","carrot"}
-print(set1-set2)
-print(set1|set2)
-print(set1&set2)
+print(set1 - set2)
+print(set1 | set2)
+print(set1 & set2)
+print(set1 ^ set2)
 print(set1.union(set2))
 
 set1.update(set2)

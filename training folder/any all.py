@@ -3,3 +3,8 @@ l2=[0,0,0,0.1]
 
 print(all(l))
 print(any(l2))
+
+
+
+
+
