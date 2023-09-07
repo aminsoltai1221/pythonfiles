@@ -26,3 +26,17 @@ print(next(k))
 print(next(k))       
  
 print(list(my_gen()))
+
+
+
+
+
+
+def func(x):
+    while x < 100:
+        x += 4
+        yield x
+
+
+for i in func(18):
+    print(i)
