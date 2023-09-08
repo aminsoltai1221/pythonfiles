@@ -36,7 +36,20 @@ def func(x):
     while x < 100:
         x += 4
         yield x
+        
+        
+def Generator(start, stop, step = 1):
+    while start < stop:
+        yield start
+        start += step
+        
+                
 
 
-for i in func(18):
+# for i in func(18):
+#     print(i)
+    
+    
+
+for i in Generator(18, 34, 3):
     print(i)
