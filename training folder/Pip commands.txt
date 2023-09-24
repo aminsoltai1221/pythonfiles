@@ -1,0 +1,30 @@
+﻿Pip commands
+
+
+pip install ABN
+
+pip install ABN==0.33                  #install a specific version
+
+python get-pip.py                          #install pip on a python version
+
+pip --version
+
+pip list
+
+pip list --outdated
+
+pip freeeze
+
+pip install --upgrade ABN
+
+pip install -U ABN
+
+python -m pip install –upgrade pip
+
+pip show Django             #show details
+
+pip freeze > requirments.txt       #save all packages in a file
+
+pip install -r  requirments.txt       #install all from file
+
+virtualenv --python=python3.11.5 mvenv   #create virtual environment
